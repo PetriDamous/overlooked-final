@@ -19,5 +19,102 @@
 
     --fs-300: 0.75rem;
     --fs-400: 1rem;
-    --fs-500: 2rem;
+    --fs-500: 2.25rem;
+
+    /* --shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.1); */
+    --shadow: 2px 6px 8px 9px rgba(0, 0, 0, .2);
+    --border-radius: 0.75rem;
 }
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--ff-base);
+    color: var(--clr-base);
+    font-size: var(--fs-400);
+    margin: 0;
+}
+
+
+h1 {
+    font-family: var(--ff-accent);
+    font-size: var(--fs-500);
+    color: var(--clr-darker);
+}
+
+
+.candidates {
+    max-width: 70em;
+    margin: 0 auto;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 2em;
+}
+
+@media (min-width: 900px) {
+    .candidates {
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* width: 40%; */
+    }
+    
+}
+
+.candidate {
+    display: flex;
+    flex-direction: row;
+    box-shadow: var(--shadow);
+    border-radius: var(--border-radius);
+    /* justify-content: space-between; */
+    gap: 5em;
+    padding: 1em; 
+    flex: 1 1 45%;   
+}
+
+.candidate  * {
+    margin-top: 0;
+}
+
+.candidate .media {
+    width: 30%;    
+}
+
+.candidate .image {
+    border-radius: var(--border-radius);
+    object-fit: cover;
+    width: 100%;
+}
+
+.candidate .social {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2px;
+    max-width: 167px;
+    min-width: 170px;
+}
+
+.candidate .profile {
+    width: 65%;
+}
+
+.candidate .name {
+    margin-bottom: 0;
+}
+
+@media (min-width: 700px) {
+    .candidate {
+        flex-direction: row;
+    }
+}
+
+/* @media (min-width: 900px) {
+    .candidate {
+        flex: 1 1 45%;
+    }
+} */
