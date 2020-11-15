@@ -1,0 +1,23 @@
+:root {
+    --clr-base: #5e5e5e;
+    --clr-darker: #494949;
+
+    --clr-ui-light: #f8e2ff;
+    --clr-ui-dark: #580d3a;
+    
+    --clr-ux-light: #e2ffea;
+    --clr-ux-dark: #115926;
+    
+    --clr-dev-light: #e2fcff;
+    --clr-dev-dark: #024f4f;
+    
+    --ff-base: 'Open Sans', sans-serif;
+    --ff-accent: 'Podkova', serif;
+
+    --fw-400: 400;
+    --fw-700: 700;
+
+    --fs-300: 0.75rem;
+    --fs-400: 1rem;
+    --fs-500: 2rem;
+}
